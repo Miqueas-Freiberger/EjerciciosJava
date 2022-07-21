@@ -1,0 +1,32 @@
+Spotify, decidió ordenar un poco su colección. Para esto
+solicitó un sistema que le permita organizar las Temas
+musicales y los Intérpretes de los mismos. Cada Tema
+musical posee un título, un puntaje promedio dado por los
+usuarios, un año de lanzamiento, la cantidad de premios
+ganados y una lista de intérpretes que han cantado el tema.
+Por ejemplo el tema “Nos sobran los motivos”, puntaje 9.8, año 1999,
+premios 5, [Joaquín Sabina;Walter Rua;Alejandro Pómpolo...].
+
+En el proceso de reorganización, Spotify quiere poder también agrupar sus
+temas en playlists (listas de reproducción), de l as cuales guarda un título y
+el conjunto de temas que posee (incluso puede i ncluir otras playlists
+además de temas). Por ejemplo l a playlist “Lo mejor de Joaquín Sabina”, contiene l os temas
+“Nos sobran l os motivos”, “19 días y 500 noches”, “Noches de boda”, y l a playlist “Mentiras
+piadosas” (que a su vez contiene otros 10 temas diferentes). También desea poder crear
+grupos, a los cuales les asigna un título y una lista de temas, playlists o incluso sub-grupos.
+1. Implementar los siguientes servicios:
+● Obtener la cantidad total de premios ganados por un tema/playlist/grupo
+● Obtener una l ista de todos l os i ntérpretes de una tema/playlist/grupo, sin
+incluir intérpretes repetidos
+● Obtener el puntaje de una tema/playlist/grupo. Para calcular el puntaje de
+playlists y grupos se usa el promedio de todos los elementos que contiene.
+2. Adicionalmente Spotify, además de todas l os temas musicales tiene un l istado de
+intérpretes. De cada i ntérprete se guarda su Nombre, Apellido, Año de Nacimiento, y
+un listado de temas que canta. Se desea poder buscar todos los intérpretes que:
+● se llamen “Joaquín”
+● se apelliden “Galán”
+● hayan nacido antes del año 2000
+● hayan cantado temas que hayan ganado más de 2 premios
+● Cualquier combinación lógica de las búsquedas anteriores
+Las búsquedas de intérpretes, se retornan siempre ordenadas por: Apellido,
+Nombre y Año de nacimiento (en ese orden si hay apellidos y nombres repetidos)
